@@ -1,29 +1,19 @@
 {
-  "name": "react-express-typescript-app",
+  "name": "darrow-news-violation-scanner",
   "version": "1.0.0",
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "server": "cd server && npm run dev",
     "client": "cd client && npm start",
-    "build": "npm run build:server && npm run build:client",
-    "build:server": "cd server && npm run build",
-    "build:client": "cd client && npm run build",
-    "install:all": "npm install && npm run install:server && npm run install:client",
+    "install:all": "npm install && concurrently \"npm run install:server\" \"npm run install:client\"",
     "install:server": "cd server && npm install",
-    "install:client": "cd client && npm install"
+    "install:client": "cd client && npm install",
+    "clean:all": "concurrently \"npm run clean:server\" \"npm run clean:client\" && npm run clean",
+    "clean:server": "cd server && npm run clean",
+    "clean:client": "cd client && npm run clean",
+    "clean": "rm -rf node_modules && rm -rf package-lock.json"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
-  },
-  "workspaces": [
-    "server",
-    "client"
-  ],
-  "dependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^4.17.21",
-    "@types/react-router-dom": "^5.3.3",
-    "dotenv": "^16.4.5",
-    "react-router-dom": "^6.27.0"
   }
 }
