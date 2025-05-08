@@ -1,3 +1,4 @@
+#TODO: Complete README
 # Full Stack Home Assignment
 
 This project is a simple chat application built with React and Node.js.

@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@mui/material";
 interface FetchNewsButtonProps {
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 export const FetchNewsButton: React.FC<FetchNewsButtonProps> = ({
