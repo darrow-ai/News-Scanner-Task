@@ -12,7 +12,7 @@ router.get("/", (req: Request, res: Response) => {
   res.send("Welcome to the Darrow's News API");
 });
 
-router.get("/sources", async (req: Request, res: Response) => {
+router.get("/news", async (req: Request, res: Response) => {
   const { q, category } = req.query;
 
   try {

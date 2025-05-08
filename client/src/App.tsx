@@ -9,9 +9,10 @@ import { FetchNewsButton } from "./components/FetchNewsButton";
 type Article = {
   content: string;
   description: string;
-  publishedAt: string;
-  source: string
-  
+  source: string;
+  url: string;
+  title: string;
+  urlToImage: string;
 };
 
 function App() {
