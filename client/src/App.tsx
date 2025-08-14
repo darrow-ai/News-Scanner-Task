@@ -7,6 +7,10 @@ import { FetchNewsButton } from "./components/FetchNewsButton";
 function App() {
   return (
     <div className="app">
+      <header className="header">
+        <img src="/logo.svg" alt="News Scanner Logo" className="logo" />
+        <div className="header-title">News Scanner</div>
+      </header>
       <div className="filters">
         <QueryInput
         // value={}
