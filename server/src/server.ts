@@ -1,6 +1,6 @@
 import express, { Express, NextFunction, Request, Response } from "express";
 import cors from "cors";
-import apiRouter from "./api"
+import apiRouter from "./api";
 
 const app: Express = express();
 const port: number = 5000;

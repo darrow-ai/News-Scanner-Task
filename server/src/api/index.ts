@@ -3,7 +3,7 @@ import { Router, Request, Response } from "express";
 const router = Router();
 
 router.get("/", (req: Request, res: Response) => {
-  res.send("Welcome to the Darrow's News API");
+  res.send("Welcome to the Darrow's News Scanner API");
 });
 
 router.get("/categories", async (req: Request, res: Response) => {
