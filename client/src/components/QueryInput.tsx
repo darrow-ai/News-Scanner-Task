@@ -1,6 +1,4 @@
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
-import OutlinedInput from "@mui/material/OutlinedInput";
+import { Input } from "./ui/input";
 
 interface QueryInputProps {
   onChange?: any;
@@ -13,34 +11,20 @@ export const QueryInput = ({ onChange, value = "" }: QueryInputProps) => {
   };
 
   return (
-    <div className={"query-input"}>
-      <FormControl sx={{ m: 1, width: 300 }}>
-        <InputLabel
-          id="query-input-label"
-          sx={{
-            "&.Mui-focused": {
-              color: "#7F56D9",
-            },
-          }}
-        >
-          <div>{"Search"}</div>
-        </InputLabel>
-        <OutlinedInput
-          className="query-input"
-          value={value}
-          onChange={handleChange}
-          placeholder={"What to search for?"}
-          label={"Search"}
-          sx={{
-            "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
-              borderColor: "#7F56D9",
-            },
-            "&:hover .MuiOutlinedInput-notchedOutline": {
-              borderColor: "#7F56D9",
-            },
-          }}
-        />
-      </FormControl>
+    <div className="flex flex-col gap-2 w-[300px]">
+      <label
+        htmlFor="query-input"
+        className="text-sm font-medium text-gray-700"
+      >
+        Search by
+      </label>
+      <Input
+        id="query-input"
+        value={value}
+        onChange={handleChange}
+        placeholder="What to search for?"
+        className="focus:ring-[#7F56D9] focus:border-[#7F56D9] hover:border-[#7F56D9]"
+      />
     </div>
   );
 };
