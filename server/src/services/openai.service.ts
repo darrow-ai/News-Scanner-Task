@@ -3,7 +3,7 @@ import { PORTKEY_GATEWAY_URL, createHeaders } from "portkey-ai";
 
 export function getOpenAIClient(): OpenAI {
   return _createOpenAIClient({
-    openAIKey: "", // Plesae add the OpenAIKey we provided you here
+    openAIKey: "", // Plesae add the openAIKey we provided you here
   });
 }
 
@@ -13,8 +13,7 @@ function _createOpenAIClient({ openAIKey }: { openAIKey: string }): OpenAI {
     apiKey: "xx",
     baseURL: PORTKEY_GATEWAY_URL,
     defaultHeaders: createHeaders({
-      apiKey: "n307Js4TaC6oiFUbdvZIR37WBsMp",
-      virtualKey: openAIKey,
+      apiKey: openAIKey,
     }),
   });
 }
