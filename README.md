@@ -52,7 +52,7 @@ For each article, show a news card containing:
 - Source
 - **AI Summary** button (see Step 4)
 
-Implement an **endless scroll**: when the user reaches the end, fetch the next 6 items until there are no more.
+Implement an **ENDLESS SCROLL**: when the user reaches the end, fetch the next 6 items until there are no more.
 
 ![NewsGrid](media/step3.png)
 
