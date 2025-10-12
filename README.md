@@ -88,6 +88,7 @@ Please use `openai.service.ts` — it is a wrapper over OpenAI and shares the sa
 - Have a basic API design in mind.
 - Think about security — **do not commit sensitive API keys**.
 - The design should be pixel‑perfect as shown in Figma.
+- *NOTICE:* The code should be *production grade*
 
 ---
 
