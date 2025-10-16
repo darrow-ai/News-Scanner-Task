@@ -7,11 +7,11 @@ export function getOpenAIClient(): OpenAI {
   });
 }
 
-// Private function to create the openai client - Do not touch this function
 type createOpenAIClientArgs = {
   openAIKey: string;
 };
 
+// Private function to create the openai client - Do not touch this function
 function _createOpenAIClient({ openAIKey }: createOpenAIClientArgs): OpenAI {
   return new OpenAI({
     apiKey: "xx",
