@@ -6,7 +6,7 @@ One of the many things we do at Darrow is scan the news for legal violations �
 In this exercise, we aim to create a news legal violation scanner page that displays recent news and utilizes an LLM to detect legal violations.
 
 We will fetch the news articles from [newsapi.org](https://newsapi.org).  
-(You received a NewsAPI access key with this task)
+Please register to [newsapi.org](https://newsapi.org) to get your API Key!
 
 ![News Grid](media/grid.png)
 
@@ -64,15 +64,15 @@ Implement an **ENDLESS SCROLL**: when the user reaches the end, fetch the next 6
 
 Clicking the **AI Summary** button enhances the article with:
 
-- a **3‑line summary** of the article, and
-- a **1‑line** description of the violation the article refers to.
+- a **3- sentence summary** of the article, and
+- a **1‑sentence description** of the violation the article refers to.
 
 Create a new API endpoint that accepts the article content, injects it into an LLM, and returns this JSON shape:
 
 ```json
 {
-  "summary": "<3 lines of summary>",
-  "violation": "<1 line of the specified violation in this article>"
+  "summary": "<3 sentences of summary>",
+  "violation": "<1 sentence of the specified violation in this article>"
 }
 ```
 
