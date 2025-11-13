@@ -131,4 +131,9 @@ npm run install:all
 npm run start
 ```
 
+3. Once you're done, please submit the task [here](https://forms.gle/TGKemaZKGJgvJumDA). Make sure all `node_modules` are removed by running
+```bash
+npm run clean:all
+```
+
 **Good luck!**
