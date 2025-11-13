@@ -131,8 +131,9 @@ npm run install:all
 npm run start
 ```
 
-3. Once you're done, please submit the task [<a href="https://forms.gle/TGKemaZKGJgvJumDA" target="_blank" rel="noopener noreferrer">here</a>].  
-Make sure all `node_modules` are removed by running
+3. Once you're done, please submit the task <a href="https://forms.gle/TGKemaZKGJgvJumDA" target="_blank" rel="noopener noreferrer">here</a>.  
+   Make sure all `node_modules` are removed by running
+
 ```bash
 npm run clean:all
 ```
