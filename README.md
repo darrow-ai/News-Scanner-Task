@@ -76,7 +76,8 @@ Create a new API endpoint that accepts the article content, injects it into an L
 }
 ```
 
-Please use `openai.service.ts` — it is a wrapper over OpenAI and shares the same API. Plesae use the **OpenAIKey** we provided you there.
+Please use `openai.service.ts` — it is a wrapper over OpenAI and shares the same API. 
+Please use the **OpenAIKey** we provided you there.
 
 ![EnhancedArticleCard](media/step4.png)
 
