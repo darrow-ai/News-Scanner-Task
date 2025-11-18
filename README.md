@@ -64,7 +64,7 @@ Implement an **ENDLESS SCROLL**: when the user reaches the end, fetch the next 6
 
 Clicking the **AI Summary** button enhances the article with:
 
-- a **3- sentence summary** of the article, and
+- a **3-sentence summary** of the article, and
 - a **1‑sentence description** of the violation the article refers to.
 
 Create a new API endpoint that accepts the article content, injects it into an LLM, and returns this JSON shape:
